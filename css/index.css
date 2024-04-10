@@ -50,6 +50,17 @@ body {
   color: white;
   border-radius: 25px;
   text-decoration: none;
+
+  transition-property: scale box-shadow;
+  transition: 1.5s;
+}
+
+.btn:hover {
+  box-shadow: 8px 8px 10px #533b1b;
+  scale: 1.05;
+  background-color: #8e6735;
+  transition-property: scale box-shadow;
+  transition: 0.2s;
 }
 
 .img-item-top {
@@ -72,12 +83,12 @@ body {
   position: absolute;
   z-index: 2;
 
-  transition: all 3s;
+  transition: all 3s ease-in-out;
 }
 
 .img-item-top img:nth-child(2):hover {
-  scale: 1.4;
-  transform: translateX(-100px);
+  scale: 1.2;
+  transform: translateX(-50px);
 }
 
 .img-item-top img:nth-child(3) {
